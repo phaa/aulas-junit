@@ -10,15 +10,34 @@ package com.ifrn.teste;
  */
 public class Calculadora {
 
-    public int somar(int num1, int num2) {
-
-        return num1 + num2;
-
+    public int somar(int a, int b) {
+        return a + b;
     }
 
-    public int subtrair(int num1, int num2) {
+    public int subtrair(int a, int b) {
+        return a - b;
+    }
 
-        return num1 - num2;
+    public int multiplicar(int a, int b) {
+        return a * b;
+    }
 
+    public int dividir(int a, int b) {
+        return a / b;
+    }
+
+    public boolean isPrimo(int a) {
+        int sum = 0;
+        for (int i = 1; i <= a; i++) {
+            if (a % i == 0) {
+                sum++;
+            }
+        }
+        return sum == 2;
+    }
+    
+    public static void main(String[] args) {
+        Calculadora c = new Calculadora();
+        System.out.println(c.isPrimo(7));
     }
 }

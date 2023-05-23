@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="com.ifrn.testes.CalculadoraTest" time="0.011" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="com.ifrn.testes.CalculadoraTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\pedro\projects\TestesUnitarios"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\pedro\projects\aulas-junit\TestesUnitarios"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="test" value="com.ifrn.testes.CalculadoraTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\pedro\projects\TestesUnitarios"/>
+    <property name="user.dir" value="C:\Users\pedro\projects\aulas-junit\TestesUnitarios"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
     <property name="os.arch" value="amd64"/>
@@ -61,17 +61,16 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSomar" time="0.011">
-    <failure message="expected: &lt;16&gt; but was: &lt;15&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;16&gt; but was: &lt;15&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at com.ifrn.testes.CalculadoraTest.testSomar(CalculadoraTest.java:24)
-</failure>
-    <system-out>Testando método somar()
-</system-out>
-  </testcase>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSubtrairPositivos" time="0.001"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSubtrairPositivoNegativo" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSomarPositivoNegativo" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSubtrairNegativos" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testPrimo1" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSomarNegativos" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testPrimo2" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testMultiplicar" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testNaoPrimo2" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testNaoPrimo1" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testSomarPositivos" time="0"/>
+  <testcase classname="com.ifrn.testes.CalculadoraTest" name="com.ifrn.testes.CalculadoraTest.testDividir" time="0"/>
 </testsuite>

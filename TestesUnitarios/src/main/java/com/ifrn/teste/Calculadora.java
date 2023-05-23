@@ -27,6 +27,9 @@ public class Calculadora {
     }
 
     public boolean isPrimo(int a) {
+        if (a == 1) {
+            return true;
+        }
         int sum = 0;
         for (int i = 1; i <= a; i++) {
             if (a % i == 0) {
@@ -35,9 +38,9 @@ public class Calculadora {
         }
         return sum == 2;
     }
-    
+
     public static void main(String[] args) {
         Calculadora c = new Calculadora();
-        System.out.println(c.isPrimo(7));
+        System.out.println(c.isPrimo(8));
     }
 }

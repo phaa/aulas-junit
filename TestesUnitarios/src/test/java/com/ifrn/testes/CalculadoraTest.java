@@ -76,4 +76,61 @@ public class CalculadoraTest {
         Calculadora c = new Calculadora();
         assertEquals(expected, c.subtrair(a, b));
     }
+    
+    @Test
+    public void testMultiplicar() {
+        System.out.println("Multiplicação");
+        int a = 2;
+        int b = 5;
+        int expected = 10;
+        Calculadora c = new Calculadora();
+        assertEquals(expected, c.multiplicar(a, b));
+    }
+    
+    @Test
+    public void testDividir() {
+        System.out.println("Divisão");
+        int a = 10;
+        int b = 5;
+        int expected = 2;
+        Calculadora c = new Calculadora();
+        assertEquals(expected, c.dividir(a, b));
+    }
+    
+    // Números primos
+    @Test
+    public void testPrimo1() {
+        System.out.println("Teste número primo 1");
+        int a = 3;
+        boolean expected = true;
+        Calculadora c = new Calculadora();
+        assertEquals(expected, c.isPrimo(a));
+    }
+    
+    @Test
+    public void testPrimo2() {
+        System.out.println("Teste número primo 2");
+        int a = 5;
+        boolean expected = true;
+        Calculadora c = new Calculadora();
+        assertEquals(expected, c.isPrimo(a));
+    }
+    
+    @Test
+    public void testNaoPrimo1() {
+        System.out.println("Teste número não primo 1");
+        int a = 4;
+        boolean expected = false;
+        Calculadora c = new Calculadora();
+        assertEquals(expected, c.isPrimo(a));
+    }
+    
+    @Test
+    public void testNaoPrimo2() {
+        System.out.println("Teste número não primo 2");
+        int a = 6;
+        boolean expected = false;
+        Calculadora c = new Calculadora();
+        assertEquals(expected, c.isPrimo(a));
+    }
 }
